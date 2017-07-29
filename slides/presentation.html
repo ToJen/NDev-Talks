@@ -1,0 +1,285 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <style type="text/css">
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(assets/fonts/roboto-normal.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(assets/fonts/roboto-normal-1.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(assets/fonts/roboto-normal-2.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(assets/fonts/roboto-normal-3.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(assets/fonts/roboto-normal-4.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(assets/fonts/roboto-normal-5.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(assets/fonts/roboto-normal-6.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(assets/fonts/roboto-normal-7.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(assets/fonts/roboto-normal-8.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(assets/fonts/roboto-normal-9.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(assets/fonts/roboto-normal-10.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(assets/fonts/roboto-normal-11.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(assets/fonts/roboto-normal-12.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(assets/fonts/roboto-normal-13.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+</style>
+<style type="text/css">.tk-futura-pt{font-family:"futura-pt",sans-serif;}</style> <style type="text/css">@font-face{font-family:futura-pt;src:url(assets/fonts/futura-pt-normal.woff2) format("woff2"),url(assets/fonts/futura-pt-normal.woff) format("woff"),url(assets/fonts/futura-pt-normal.opentype) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:futura-pt;src:url(assets/fonts/futura-pt-italic.woff2) format("woff2"),url(assets/fonts/futura-pt-italic.woff) format("woff"),url(assets/fonts/futura-pt-italic.opentype) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:futura-pt;src:url(assets/fonts/futura-pt-normal-1.woff2) format("woff2"),url(assets/fonts/futura-pt-normal-1.woff) format("woff"),url(assets/fonts/futura-pt-normal-1.opentype) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:futura-pt;src:url(assets/fonts/futura-pt-italic-1.woff2) format("woff2"),url(assets/fonts/futura-pt-italic-1.woff) format("woff"),url(assets/fonts/futura-pt-italic-1.opentype) format("opentype");font-weight:400;font-style:italic;}</style>
+<style type="text/css">
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url(assets/fonts/raleway-normal.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url(assets/fonts/raleway-normal-1.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(assets/fonts/raleway-normal-2.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(assets/fonts/raleway-normal-3.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+</style>
+</head>
+<body>
+  <app-root>
+    <div class="main-spinner text-muted">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+
+    <style media="screen">
+      @-webkit-keyframes dot-fx {
+        0%,
+        70%,
+        100% {
+          transform: scale(0);
+          opacity: 0;
+        }
+        35% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      @-moz-keyframes dot-fx {
+        0%,
+        70%,
+        100% {
+          transform: scale(0);
+          opacity: 0;
+        }
+        35% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      @-o-keyframes dot-fx {
+        0%,
+        70%,
+        100% {
+          transform: scale(0);
+          opacity: 0;
+        }
+        35% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      @keyframes dot-fx {
+        0%,
+        70%,
+        100% {
+          transform: scale(0);
+          opacity: 0;
+        }
+        35% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      .main-spinner {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+           -moz-transform: translate(-50%, -50%);
+             -o-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 0.3em;
+      }
+
+      .main-spinner>.dot {
+        width: 1.4em;
+        height: 1.4em;
+        border-width: 0.28em;
+        border-style: solid;
+        border-color: inherit;
+        border-radius: 50%;
+        transform: scale(0);
+        -webkit-animation: dot-fx 1800ms ease infinite 0ms;
+           -moz-animation: dot-fx 1800ms ease infinite 0ms;
+             -o-animation: dot-fx 1800ms ease infinite 0ms;
+                animation: dot-fx 1800ms ease infinite 0ms;
+      }
+
+      .main-spinner>.dot:nth-child(2) {
+        margin-left: 0.28em;
+        -webkit-animation: dot-fx 1800ms ease infinite 270ms;
+           -moz-animation: dot-fx 1800ms ease infinite 270ms;
+             -o-animation: dot-fx 1800ms ease infinite 270ms;
+                animation: dot-fx 1800ms ease infinite 270ms;
+      }
+
+      .main-spinner>.dot:nth-child(3) {
+        margin-left: 0.28em;
+        -webkit-animation: dot-fx 1800ms ease infinite 540ms;
+           -moz-animation: dot-fx 1800ms ease infinite 540ms;
+             -o-animation: dot-fx 1800ms ease infinite 540ms;
+                animation: dot-fx 1800ms ease infinite 540ms;
+      }
+    </style>
+  </app-root>
+
+  
+  <script>
+  window.__sb__ = {
+    presentation: {"owner":{"__type":"Pointer","className":"_User","objectId":"oIOPsdEmQ9"},"layoutStyle":{"createdAt":"2016-08-04T18:14:08.801Z","updatedAt":"2017-07-12T22:51:00.949Z","layoutId":"polygon","label":"Polygon","public":true,"defaultFont":{"createdAt":"2016-08-04T18:25:57.599Z","updatedAt":"2017-04-14T18:30:48.988Z","label":"Raleway","fontId":"Raleway","webfont":{"google":{"families":["Raleway:200,600"]}},"public":true,"ACL":{"*":{"read":true},"role:Team":{"write":true}},"objectId":"smcwpGFOPb","__type":"Object","className":"Font"},"defaultFormula":{"name":"Modern","owner":{"__type":"Pointer","className":"_User","objectId":"quk5gi5Cxc"},"sharedWithTeam":false,"layoutStyle":{"__type":"Pointer","className":"Layout","objectId":"iE4BKuTgJF"},"colorPalette":{"__type":"Pointer","className":"Palette","objectId":"DU1kPliIHc"},"textFont":{"__type":"Pointer","className":"Font","objectId":"U8QmFmKwBC"},"headingFont":{"__type":"Pointer","className":"Font","objectId":"ia26dnVFTb"},"createdAt":"2017-06-07T18:04:30.327Z","updatedAt":"2017-07-13T00:03:29.726Z","public":true,"sampleSlideComponents":[{"type":"heading","data":{"heading":"STAY <b>POSITIVE</b>"},"options":{"xRatio":1.66,"yRatio":1.2,"textSize":6.4,"x":0,"y":0}},{"type":"image","data":{"image":null,"icon":{"source":"NounProject","id":"749797","thumbnailUrl":"https://d30y9cdsu7xlg0.cloudfront.net/png/749797-200.png"},"caption":""},"options":{"x":0,"y":0,"xRatio":2.09,"yRatio":-5.93,"size":1.4}},{"type":"quote","data":{"quote":"Passion never&nbsp;<span style=\"\">fails.</span>","author":"Paul Chen"},"options":{"x":0,"y":0,"xRatio":-2.58,"yRatio":50.84,"textSize":2.2}}],"ACL":{"*":{"read":true},"role:Team":{"write":true},"quk5gi5Cxc":{"write":true}},"objectId":"0mGVD6ZxVH","__type":"Object","className":"Formula"},"ACL":{"*":{"read":true}},"objectId":"iE4BKuTgJF","__type":"Object","className":"Layout"},"colorPalette":{"createdAt":"2014-05-14T20:18:41.319Z","updatedAt":"2016-09-14T17:54:53.156Z","colorSets":[{"back":"#f9f9f9","text":"#202b30","highlight":"#78c8da","chart1":"#678488","chart2":"#e9c88e"},{"back":"#202b30","text":"#f9f9f9","highlight":"#78c8da","chart1":"#e9c88e","chart2":"#e79d73"}],"label":"Indigo","public":true,"hiddenFromEditor":false,"ACL":{"role:Team":{"read":true,"write":true},"*":{"read":true}},"objectId":"t8Ym4EHGKT","__type":"Object","className":"Palette"},"privacy":"public","views":0,"titlePlain":"","createdAt":"2017-07-22T15:07:22.938Z","updatedAt":"2017-07-26T21:07:56.251Z","options":{"colorSet":2,"backgroundDim":0,"cropBackground":true,"animate":true,"logoPosition":"top-right"},"components":[{"type":"heading","data":{"heading":"Web Scraping with Python<br>"},"options":{}},{"type":"cover","data":{"title":"","subtitle":"NDev Meetup #18","author":"Tomisin Jenrola"},"options":{}}],"lastChange":{"__type":"Date","iso":"2017-07-26T21:07:56.228Z"},"title":"","formula":{"__type":"Pointer","className":"Formula","objectId":"0mGVD6ZxVH"},"textFont":{"createdAt":"2016-08-04T18:26:26.669Z","updatedAt":"2017-05-26T18:26:05.842Z","label":"Roboto","fontId":"Roboto","webfont":{"google":{"families":["Roboto:300,700"]}},"public":true,"ACL":{"*":{"read":true},"role:Team":{"write":true}},"objectId":"U8QmFmKwBC","__type":"Object","className":"Font"},"headingFont":{"createdAt":"2016-08-04T18:28:04.857Z","updatedAt":"2016-08-04T21:01:56.786Z","label":"Futura","fontId":"futura-pt","webfont":{"typekit":{"id":"daa1fcz"}},"public":true,"ACL":{"*":{"read":true}},"objectId":"ia26dnVFTb","__type":"Object","className":"Font"},"slides":13,"subtitle":"NDev Meetup #18","author":"Tomisin Jenrola","name":"Web Scraping with Python","summary":"Presentation and demo on scraping using Python at the monthly NDev meetup. ","ACL":{"oIOPsdEmQ9":{"read":true,"write":true},"*":{"read":true},"role:Readers_HpYelBIlUr":{"read":true},"role:Writers_HpYelBIlUr":{"read":true,"write":true}},"objectId":"HpYelBIlUr","className":"Presentation"},
+    slides: [{"presentation":{"__type":"Pointer","className":"Presentation","objectId":"HpYelBIlUr"},"index":0,"createdAt":"2017-07-22T15:46:57.098Z","updatedAt":"2017-07-26T09:23:12.144Z","options":{},"components":[{"type":"image","data":{"image":{"url":"assets/img/8069b652401d5323fbf7758aac4d1ad3_linked9editjpg-5yuPLpVb"},"icon":null,"caption":""},"options":{"imageCrop":"circle","size":0.8}},{"type":"paragraph","data":{"paragraph":"<ul><li>Nigerian</li><li>CS Major @ MUN<br></li><li>Software Developer @ Verafin</li></ul>"},"options":{"xRatio":0,"yRatio":35.22}},{"type":"heading","data":{"heading":"About Me"},"options":{}},{"type":"paragraph","data":{"paragraph":"<ul><li>Pineapples on pizza!</li></ul>"},"options":{"xRatio":-98.75,"yRatio":217.75}}],"componentsPlain":"* Nigerian\n * CS Major @ MUN\n   \n * Software Developer @ Verafin\n\nAbout Me  * Pineapples on pizza!","ACL":{"*":{"read":true},"role:Readers_HpYelBIlUr":{"read":true},"role:Writers_HpYelBIlUr":{"read":true,"write":true}},"objectId":"mc3a31iTha","className":"Slide"},{"options":{},"components":[{"type":"heading","data":{"heading":"Prerequisites"},"options":{}},{"type":"paragraph","data":{"paragraph":"<ul><li>Python 2.7 or 3.5 (I'm using 3.5)<br></li><li>Pip</li><li>Selenium</li><li>Chromedriver</li><li>Git</li></ul>"},"options":{}},{"type":"background","data":{"image":null,"icon":{"source":"NounProject","id":"514543","thumbnailUrl":"https://d30y9cdsu7xlg0.cloudfront.net/png/514543-200.png"}},"options":{}}],"presentation":{"__type":"Pointer","className":"Presentation","objectId":"HpYelBIlUr"},"index":1,"componentsPlain":"Prerequisites  * Python 2.7 or 3.5 (I'm using 3.5)\n   \n * Pip\n * Selenium\n * Chromedriver\n * Git","createdAt":"2017-07-24T19:59:54.817Z","updatedAt":"2017-07-26T20:29:00.810Z","ACL":{"*":{"read":true},"role:Readers_HpYelBIlUr":{"read":true},"role:Writers_HpYelBIlUr":{"read":true,"write":true}},"objectId":"XABBGNRaI0","className":"Slide"},{"presentation":{"__type":"Pointer","className":"Presentation","objectId":"HpYelBIlUr"},"index":2,"createdAt":"2017-07-22T16:07:38.132Z","updatedAt":"2017-07-26T09:26:22.805Z","options":{},"components":[{"type":"heading","data":{"heading":"What is Web Scraping?"},"options":{}},{"type":"image","data":{"image":null,"icon":{"source":"NounProject","id":"375517","thumbnailUrl":"https://d30y9cdsu7xlg0.cloudfront.net/png/375517-200.png","url":"assets/img/375517svg-QZ1luuqg"}},"options":{"size":0.2}},{"type":"paragraph","data":{"paragraph":"<ul><li>harvesting data from websites<br></li><li><b>specific</b>&nbsp;data e.g. prices on Amazon<br></li><li>stored in file/database<br></li><li>automated with a bot/crawler<br></li></ul>"},"options":{"textAlign":"left","textSize":-0.2,"xRatio":-13.04,"yRatio":24.92}}],"componentsPlain":"What is Web Scraping?  * harvesting data from websites\n   \n * specificdata e.g. prices on Amazon\n   \n * stored in file/database\n   \n * automated with a bot/crawler","ACL":{"*":{"read":true},"role:Readers_HpYelBIlUr":{"read":true},"role:Writers_HpYelBIlUr":{"read":true,"write":true}},"objectId":"hfq1CnclSv","className":"Slide"},{"presentation":{"__type":"Pointer","className":"Presentation","objectId":"HpYelBIlUr"},"index":3,"createdAt":"2017-07-22T16:22:21.233Z","updatedAt":"2017-07-26T09:26:22.843Z","options":{"colorSet":0,"backgroundDim":0.3,"cropBackground":true,"animate":true,"logoPosition":"top-right"},"components":[{"type":"heading","data":{"heading":"Web Crawling"},"options":{}},{"type":"paragraph","data":{"paragraph":"<ul><li>indexing&nbsp;web pages with&nbsp;spiders<br></li><li>iterating<i>&nbsp;seeds</i> and a&nbsp;<i>crawl frontier</i></li><li><b>everything</b> and&nbsp;<b>anything</b></li><li>e.g search engines,&nbsp;Googlebot</li></ul>"},"options":{"textSize":-0.2,"xRatio":0,"yRatio":0}},{"type":"image","data":{"image":null,"icon":{"source":"NounProject","id":"306528","thumbnailUrl":"https://d30y9cdsu7xlg0.cloudfront.net/png/306528-200.png","url":"assets/img/306528svg-8v2i1nrX"}},"options":{"size":0.4,"textSize":-0.8}},{"type":"paragraph","data":{"paragraph":"<b>versus</b> scraping:<br><ul><li>learn site structure</li><li>visit not extract</li><li>easier to implement</li><li>doesn't pretend to be human</li><li>usually no targeted websites</li></ul>"},"options":{"xRatio":-9.88,"yRatio":0}}],"componentsPlain":"Web Crawling  * indexing web pages with spiders\n   \n * iteratingseeds and acrawl frontier\n * everything andanything\n * e.g search engines, Googlebot\n\nversus scraping:\n * learn site structure\n * visit not extract\n * easier to implement\n * doesn't pretend to be human\n * usually no targeted websites","ACL":{"*":{"read":true},"role:Readers_HpYelBIlUr":{"read":true},"role:Writers_HpYelBIlUr":{"read":true,"write":true}},"objectId":"8AKGlsSOM4","className":"Slide"},{"options":{"colorSet":1,"backgroundDim":0.3,"cropBackground":true,"animate":true,"logoPosition":"top-right"},"components":[{"type":"image","data":{"image":{"url":"assets/img/8c59a5c8ccea0276262c40f1cf9e37a1_scrape1png-yoMLRiOg"},"icon":null,"caption":"Step 1"},"options":{"imageCrop":"contain","size":1.2}},{"type":"image","data":{"image":{"url":"assets/img/7c332175fe9c6ac440807012b23c45a3_scrape2png-RlCRbjmo"},"icon":null,"caption":"Step 2"},"options":{"imageCrop":"contain"}},{"type":"image","data":{"image":{"url":"assets/img/35b4ce594c0f96ca329d9f5e5024f304_srape3editjpg-hndCCLwi"},"icon":null,"caption":"Step 3"},"options":{"imageCrop":"contain","size":2}},{"type":"heading","data":{"heading":"Scraper Example"},"options":{}},{"type":"image","data":{"image":{"url":"assets/img/edf148d9054a27f86eb3e7e1b1ee86e8_scrape4png-Q8OH1OhC"},"icon":null,"caption":"Step 4"},"options":{"imageCrop":"contain","size":0.8,"xRatio":13.04,"yRatio":33.61}}],"presentation":{"__type":"Pointer","className":"Presentation","objectId":"HpYelBIlUr"},"index":4,"componentsPlain":"Step 1 Step 2 Step 3 Scraper Example Step 4","createdAt":"2017-07-22T20:28:44.235Z","updatedAt":"2017-07-26T09:26:22.866Z","ACL":{"*":{"read":true},"role:Readers_HpYelBIlUr":{"read":true},"role:Writers_HpYelBIlUr":{"read":true,"write":true}},"objectId":"xq4ZXsrs65","className":"Slide"},{"presentation":{"__type":"Pointer","className":"Presentation","objectId":"HpYelBIlUr"},"index":5,"createdAt":"2017-07-22T17:54:59.273Z","updatedAt":"2017-07-26T20:56:51.309Z","options":{"colorSet":1,"backgroundDim":0.3,"cropBackground":true,"animate":true,"logoPosition":"top-right"},"components":[{"type":"image","data":{"image":{"url":"assets/img/d843232825cabf7c9771efb1b6378724_crawl1editjpg-OnZL1Eud"},"icon":null,"caption":"Page 1"},"options":{"imageCrop":"contain","size":0.8}},{"type":"image","data":{"image":{"url":"assets/img/95c3acb728775e08b227525c88b18f4f_crawl2editjpg-ouEo7Nlc"},"icon":null,"caption":"Page 2"},"options":{"imageCrop":"contain","size":0}},{"type":"image","data":{"image":{"url":"assets/img/51cb38030de02d70cf5f853b700d8e21_crawl3png-PPimHXvj"},"icon":null,"caption":"Page 3"},"options":{"imageCrop":"contain","size":1}},{"type":"heading","data":{"heading":"Crawler Example"},"options":{}}],"componentsPlain":"Page 1 Page 2 Page 3 Crawler Example","ACL":{"*":{"read":true},"role:Readers_HpYelBIlUr":{"read":true},"role:Writers_HpYelBIlUr":{"read":true,"write":true}},"objectId":"l8NyxcwUq2","className":"Slide"},{"presentation":{"__type":"Pointer","className":"Presentation","objectId":"HpYelBIlUr"},"index":6,"createdAt":"2017-07-23T00:21:39.606Z","updatedAt":"2017-07-26T09:26:22.874Z","options":{},"components":[{"type":"heading","data":{"heading":"Applications/Use Cases"},"options":{}},{"type":"background","data":{"image":null,"icon":{"source":"NounProject","id":"204586","thumbnailUrl":"https://d30y9cdsu7xlg0.cloudfront.net/png/204586-200.png"}},"options":{}},{"type":"paragraph","data":{"paragraph":"<ul><li>product/price comparisons</li><li>finding business contacts</li><li>recruiting on LinkedIn</li><li>media companies and hashtags</li><li>data science</li></ul>"},"options":{"textAlign":"center","xRatio":26.07,"yRatio":0}}],"componentsPlain":"Applications/Use Cases  * product/price comparisons\n * finding business contacts\n * recruiting on LinkedIn\n * media companies and hashtags\n * data science","ACL":{"*":{"read":true},"role:Readers_HpYelBIlUr":{"read":true},"role:Writers_HpYelBIlUr":{"read":true,"write":true}},"objectId":"hmngVrOQDO","className":"Slide"},{"presentation":{"__type":"Pointer","className":"Presentation","objectId":"HpYelBIlUr"},"index":7,"createdAt":"2017-07-23T00:23:28.044Z","updatedAt":"2017-07-26T09:26:22.889Z","options":{},"components":[{"type":"heading","data":{"heading":"Scraping Tools and Software"},"options":{}},{"type":"paragraph","data":{"paragraph":"DIY:<br><ul><li>Selenium</li><li>BeautifulSoup</li></ul>"},"options":{"textSize":1.6,"xRatio":0,"yRatio":0}},{"type":"background","data":{"image":null,"icon":{"source":"NounProject","id":"32026","thumbnailUrl":"https://d30y9cdsu7xlg0.cloudfront.net/png/32026-200.png"}},"options":{}},{"type":"paragraph","data":{"paragraph":"Third Party Apps:<br><ul><li>Scrapy</li><li>Import.io</li><li>Octoparse</li><li>Web Scraper (Chrome extension)</li></ul>"},"options":{"textSize":1.6}}],"componentsPlain":"Scraping Tools and Software DIY:\n * Selenium\n * BeautifulSoup\n\nThird Party Apps:\n * Scrapy\n * Import.io\n * Octoparse\n * Web Scraper (Chrome extension)","ACL":{"*":{"read":true},"role:Readers_HpYelBIlUr":{"read":true},"role:Writers_HpYelBIlUr":{"read":true,"write":true}},"objectId":"1wWYgiCGN4","className":"Slide"},{"presentation":{"__type":"Pointer","className":"Presentation","objectId":"HpYelBIlUr"},"index":8,"createdAt":"2017-07-22T22:23:51.824Z","updatedAt":"2017-07-26T09:26:23.040Z","options":{},"components":[{"type":"heading","data":{"heading":"Play Time!"},"options":{}},{"type":"image","data":{"image":{"url":"assets/img/giphygif-M9JCgnnU","thumbnailUrl":"https://media4.giphy.com/media/zXmbOaTpbY6mA/giphy-downsized.gif","source":"Giphy","id":"zXmbOaTpbY6mA"},"icon":null},"options":{"size":2}}],"componentsPlain":"Play Time!","ACL":{"*":{"read":true},"role:Readers_HpYelBIlUr":{"read":true},"role:Writers_HpYelBIlUr":{"read":true,"write":true}},"objectId":"gXWkVR4gGF","className":"Slide"},{"presentation":{"__type":"Pointer","className":"Presentation","objectId":"HpYelBIlUr"},"index":9,"createdAt":"2017-07-23T10:52:58.167Z","updatedAt":"2017-07-26T21:07:56.177Z","options":{},"components":[{"type":"heading","data":{"heading":"Prerequisites"},"options":{}},{"type":"paragraph","data":{"paragraph":"<ul><li>Python 2.7 or 3.5 (I'm using 3.5)<br></li><li>Pip</li><li>Selenium</li><li>Chromedriver</li><li>Git</li></ul>"},"options":{}},{"type":"background","data":{"image":null,"icon":{"source":"NounProject","id":"514543","thumbnailUrl":"https://d30y9cdsu7xlg0.cloudfront.net/png/514543-200.png"}},"options":{}}],"componentsPlain":"Prerequisites  * Python 2.7 or 3.5 (I'm using 3.5)\n   \n * Pip\n * Selenium\n * Chromedriver\n * Git","ACL":{"*":{"read":true},"role:Readers_HpYelBIlUr":{"read":true},"role:Writers_HpYelBIlUr":{"read":true,"write":true}},"objectId":"YYOTqUWtG4","className":"Slide"},{"presentation":{"__type":"Pointer","className":"Presentation","objectId":"HpYelBIlUr"},"index":10,"createdAt":"2017-07-23T10:42:27.503Z","updatedAt":"2017-07-26T09:26:23.071Z","options":{},"components":[{"type":"heading","data":{"heading":"Website DOM"},"options":{}},{"type":"image","data":{"image":{"url":"assets/img/3b84e056b21e25b9c50df9cc3c65a2fa_WebsiteDOMpng-Cj2lO1Ip"},"icon":null},"options":{"imageCrop":"contain","size":2}}],"componentsPlain":"Website DOM","ACL":{"*":{"read":true},"role:Readers_HpYelBIlUr":{"read":true},"role:Writers_HpYelBIlUr":{"read":true,"write":true}},"objectId":"dvrU7UWluf","className":"Slide"},{"presentation":{"__type":"Pointer","className":"Presentation","objectId":"HpYelBIlUr"},"index":11,"createdAt":"2017-07-22T21:41:30.859Z","updatedAt":"2017-07-26T09:26:23.305Z","options":{"colorSet":0,"backgroundDim":0.3,"cropBackground":true,"animate":true,"logoPosition":"top-right"},"components":[{"type":"heading","data":{"heading":"Glossary"},"options":{}},{"type":"paragraph","data":{"paragraph":"<ul><li><b>crawl:</b> traverse websites for updates&nbsp;<br></li><li><b>scrape:</b> &nbsp;crawl + extract data</li><li><b>spider</b>/<b>crawler:</b></li><li><b>seed:</b> a URL to crawl through</li><li><b>crawl</b> <b>frontier:</b> list of seeds</li><li><b>web indexing:</b> recording websites for SEO</li></ul>"},"options":{"textSize":-0.2,"xRatio":0,"yRatio":0}},{"type":"paragraph","data":{"paragraph":"<ul><li>yummy: pineapples on pizza 😆</li></ul>"},"options":{"xRatio":78.81,"yRatio":0}},{"type":"image","data":{"image":{"url":"assets/img/giphygif-AkbK2whZ","thumbnailUrl":"https://media4.giphy.com/media/RLghQPw6xm43m/giphy-downsized.gif","source":"Giphy","id":"RLghQPw6xm43m"},"icon":null},"options":{"xRatio":-9.87,"yRatio":23.77,"size":1.6}}],"componentsPlain":"Glossary  * crawl: traverse websites for updates\n   \n * scrape: crawl + extract data\n * spider/crawler:\n * seed: a URL to crawl through\n * crawl frontier: list of seeds\n * web indexing: recording websites for SEO\n\n * yummy: pineapples on pizza 😆","ACL":{"*":{"read":true},"role:Readers_HpYelBIlUr":{"read":true},"role:Writers_HpYelBIlUr":{"read":true,"write":true}},"objectId":"O1E974c3x1","className":"Slide"},{"presentation":{"__type":"Pointer","className":"Presentation","objectId":"HpYelBIlUr"},"index":12,"createdAt":"2017-07-22T16:42:44.482Z","updatedAt":"2017-07-26T09:26:23.685Z","options":{"colorSet":1,"backgroundDim":0.3,"cropBackground":true,"animate":true,"logoPosition":"top-right"},"components":[{"type":"heading","data":{"heading":"Contact"},"options":{}},{"type":"code","data":{"code":"my_contacts = {\n    'GitHub':       '/ToJen',\n    'LinkedIn':     '/in/tomisinjenrola',\n    'Email':        'tomisinjenrola@gmail.com'\n  }","language":"python"},"options":{"xRatio":0,"yRatio":0}}],"componentsPlain":"Contact my_contacts = { 'GitHub': '/ToJen', 'LinkedIn': '/in/tomisinjenrola', 'Email': 'tomisinjenrola@gmail.com' }","ACL":{"*":{"read":true},"role:Readers_HpYelBIlUr":{"read":true},"role:Writers_HpYelBIlUr":{"read":true,"write":true}},"objectId":"DTpsdyXF10","className":"Slide"}]
+  };
+  </script>
+  
+  <div id="embedded-icons"><div id="icon-306528" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" viewBox="0 0 100 100" x="0px" y="0px"><path d="m 19.283008,38.931209 c -3.245503,0 -6.199096,-2.951728 -6.200961,-6.19723 -0.0018,-3.247368 2.952661,-6.20376 6.200961,-6.20376 3.247367,0 6.202828,2.956392 6.200961,6.20376 -0.0018,3.245502 -2.955459,6.19723 -6.200961,6.19723 z" color="#000"></path><path d="M 13.861713,45.615266 5.3497308,67.915037 C 5.1154364,68.528843 5,69.202047 5,69.896845 c 0,3.090688 2.5059381,5.595694 5.595694,5.595694 l 17.373695,0 c 3.090689,0 5.595694,-2.505938 5.595694,-5.595694 0,-0.695731 -0.115748,-1.368816 -0.34973,-1.981808 L 24.70337,45.615266 c -0.930977,-2.438983 -2.807173,-4.226614 -5.420828,-4.226614 -2.612723,0 -4.489851,1.787631 -5.420829,4.226614 z" color="#000"></path><path d="m 82.586883,26.530219 c -3.245502,0 -6.199095,2.951729 -6.200961,6.197231 -0.0018,3.247368 2.952661,6.203759 6.200961,6.203759 3.247368,0 6.202828,-2.956391 6.200962,-6.203759 -0.0018,-3.245502 -2.955459,-6.197231 -6.200962,-6.197231 z" color="#000"></path><path d="m 80.252547,75.499067 c -2.614122,0 -4.934936,-1.749838 -5.422228,-4.226613 L 70.253975,48.012088 c -0.06508,-0.330828 -0.08767,-0.673349 -0.08767,-1.021214 0,-3.090689 2.505939,-5.595694 5.595694,-5.595694 l 13.642301,0 c 3.090686,0 5.595698,2.505938 5.595698,5.595694 0,0.347865 -0.02259,0.691318 -0.0877,1.022146 l -4.57631,23.260366 C 89.850136,73.74284 87.528813,75.5 84.91376,75.5" color="#000"></path><path d="m 54.993622,41.17602 c -1.066061,0.0043 -2.147196,0.652545 -2.582908,1.635842 l -2.123724,4.79273 -10.188138,0 c -1.434009,0 -2.725582,1.321093 -2.726403,2.755102 -8.2e-4,1.434832 1.291163,2.726403 2.726403,2.726403 l 7.748725,0 -1.463648,3.300383 -6.285077,0 c -1.434009,0 -2.725582,1.321093 -2.726403,2.755102 -8.2e-4,1.434832 1.291163,2.726403 2.726403,2.726403 l 3.874362,0 -1.147959,2.582908 c -0.582406,1.310414 0.06658,3.034905 1.377551,3.616071 1.311717,0.581499 3.037522,-0.06408 3.616072,-1.377551 l 2.123724,-4.821428 10.188138,0 c 1.434828,0 2.727233,-1.291571 2.726403,-2.726403 -8.21e-4,-1.434009 -1.292396,-2.755102 -2.726403,-2.755102 l -7.748725,0 1.463648,-3.300383 6.285077,0 c 1.434828,0 2.727233,-1.291571 2.726403,-2.726403 -8.21e-4,-1.434009 -1.292396,-2.755102 -2.726403,-2.755102 l -3.874362,0 1.147959,-2.582908 c 0.582739,-1.311163 -0.06517,-3.036082 -1.377551,-3.616072 -0.327908,-0.144916 -0.67781,-0.231033 -1.033164,-0.229592 z" color="#000"></path></svg></div>
+<div id="icon-375517" style="display: none;"><svg xmlns:x="http://ns.adobe.com/Extensibility/1.0/" xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/" xmlns:graph="http://ns.adobe.com/Graphs/1.0/" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><metadata><sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/"><slices></slices><sliceSourceBounds width="1449.1" height="1429.6" y="-1445.1" x="0.4" bottomLeftOrigin="true"></sliceSourceBounds></sfw></metadata><path d="M50,2.9c-4.1,0-8,0.8-11.8,2.4C22.5,11.7,15,29.8,21.5,45.5c4.8,11.6,16,19.1,28.5,19.1c4.1,0,8-0.8,11.8-2.4  C77.5,55.7,85,37.7,78.5,21.9C73.7,10.4,62.5,2.9,50,2.9z M25.5,42.1c-1.9-5.4-1.9-11.2,0-16.7h6.6c-0.5,2.7-0.8,5.6-0.8,8.3  c0,2.6,0.3,5.4,1,8.3H25.5z M36.3,33.7c0-2.9,0.3-5.7,0.9-8.3h10.3v16.7H37.4C36.7,39.3,36.3,36.4,36.3,33.7z M52.5,9.2  c3.5,1.4,6.7,5.7,8.8,11.2h-8.8V9.2z M47.5,9.2v11.2h-8.8C40.8,14.9,44,10.6,47.5,9.2z M47.5,47.1v11.1c-3.3-1.5-6.4-5.9-8.5-11.1  H47.5z M52.5,58.2V47.1H61C58.9,52.3,55.8,56.7,52.5,58.2z M52.5,42.1V25.4h10.3c0.6,2.7,0.9,5.5,0.9,8.3c0,2.7-0.4,5.5-1.1,8.3  H52.5z M67.9,25.4h6.6c1.9,5.6,1.8,11.4,0,16.7h-6.8c0.7-2.9,1-5.8,1-8.3C68.7,31,68.4,28.1,67.9,25.4z M72.2,20.4h-5.6  c-1.1-3.6-2.7-6.9-4.7-9.6C66.1,13,69.7,16.3,72.2,20.4z M38.1,10.8c-1.9,2.7-3.5,6-4.7,9.6h-5.5C30.3,16.3,33.8,13,38.1,10.8z   M27.8,47.1h5.9c1.3,3.7,3,7.2,5.2,10.1C34.4,55,30.5,51.5,27.8,47.1z M61.1,57.1c2.1-2.9,3.9-6.4,5.1-10h5.9  C69.6,51.3,65.8,54.9,61.1,57.1z M9.7,97.1c2.7,0,5.3-1.2,7.1-3.3c0.8-1,1.4-2.1,1.8-3.4h22.6c1.1,3.9,4.6,6.7,8.8,6.7  c4.2,0,7.7-2.8,8.8-6.7h22.6c1.1,3.9,4.6,6.7,8.8,6.7c5.1,0,9.2-4.1,9.2-9.2c0-5.1-4.1-9.2-9.2-9.2c-4.2,0-7.7,2.8-8.8,6.7H58.8  c-0.9-3.1-3.3-5.5-6.3-6.3v-6.9c0-1.4-1.1-2.5-2.5-2.5s-2.5,1.1-2.5,2.5v6.9c-3.1,0.9-5.5,3.3-6.3,6.3H18.5c-0.9-3.3-3.7-5.9-7-6.5  c-3.3-0.6-6.7,0.6-8.9,3.2c-1.8,2.1-2.5,4.9-1.9,7.6c0.7,3.6,3.6,6.6,7.2,7.2C8.5,97.1,9.1,97.1,9.7,97.1z M90.3,83.7  c2.3,0,4.2,1.9,4.2,4.2c0,2.3-1.9,4.2-4.2,4.2c-2.2,0-4-1.7-4.2-3.9c0-0.1,0-0.2,0-0.3s0-0.2,0-0.3C86.3,85.5,88.1,83.7,90.3,83.7z   M50,83.7c2.3,0,4.2,1.9,4.2,4.2c0,2.3-1.9,4.2-4.2,4.2s-4.2-1.9-4.2-4.2C45.8,85.6,47.7,83.7,50,83.7z M5.6,88.8  c-0.2-1.3,0.1-2.5,0.9-3.5c0.8-1,2-1.5,3.2-1.5c0.3,0,0.6,0,0.8,0.1c1.6,0.3,3,1.6,3.3,3.3c0.2,1.3-0.1,2.5-0.9,3.5  c-1,1.2-2.5,1.7-4.1,1.4C7.2,91.7,5.9,90.4,5.6,88.8z"></path></svg></div></div>
+  <script type="text/javascript" src="assets/js/inline.bundle.js"></script>
+  <script type="text/javascript" src="assets/js/polyfills.bundle.js"></script>
+  <script type="text/javascript" src="assets/js/scripts.bundle.js"></script>
+  <script type="text/javascript" src="assets/js/styles.bundle.js"></script>
+  <script type="text/javascript" src="assets/js/vendor.bundle.js"></script>
+  <script type="text/javascript" src="assets/js/main.bundle.js"></script>
+</body>
+</html>
